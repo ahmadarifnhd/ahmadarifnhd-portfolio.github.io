@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --primary-color1: #f9532d;
+  --primary-color2: #52489c;
+  --primary-dark: #1f252e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: #ffffff;
+  height: 100vh;
+  color: #000;
+}
+
+/* Genral */
+.container {
+  padding: 0 15rem;
+}
+
+.img-w {
+  width: 100%;
+  height: auto;
+}
+
+/* Nav */
+header {
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
+  background: #000000d2;
+  position: center;
+  top: 0;
+  z-index: 1;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+ul {
+  display: flex;
+  gap: 0.6rem;
+  list-style-type: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+li a {
+  align-items: center;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  border-radius: 36px;
+  line-height: 2;
+}
+
+li a.active,
+li a:hover {
+  color: var(--primary-color1);
+}
+
+.main {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 2rem;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.home h3 {
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0.3rem 0rem;
+  animation: topSideAni 1s ease forwards;
+}
+
+.home h1 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.1rem 0rem;
+  animation: leftSideAni 1s ease forwards;
+  animation-delay: 1s;
+  -webkit-animation: leftSideAni 1s ease forwards;
+}
+
+p {
+  text-align: justify;
+  padding: 0.3rem 0rem;
+}
+
+.images {
+  border-radius: 10px;
+  width: 450px;
+  background: linear-gradient(145deg, #ffffff, #d1d9e6);
+  box-shadow: 5px 5px 15px #1f252e, -5px -5px 15px #ffffff;
+  border-top: 2px solid var(--primary-color1);
+}
+
+.about h1 {
+  font-size: 200%;
+  padding: 5rem 0;
+  padding-top: 14rem;
+  text-align: center;
+  color: #333;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 250px;
+}
+
+.label {
+  flex: 5;
+  font-weight: bold;
+}
+
+.label:after {
+  content: ":";
+}
+
+.value {
+  flex: 5;
+}
+
+.contact h1 {
+  font-size: 200%;
+  padding: 5rem;
+  padding-top: 20rem;
+  text-align: center;
+  color: #333;
+}
+
+.contact {
+  margin-bottom: 55px; /* Tambahkan margin bawah */
+}
+
+footer {
+  bottom: 0; /* Taruh footer di bagian bawah */
+  width: 100%; /* Lebar footer sama dengan lebar layar */
+  box-shadow: 0 -17px 17px -17px rgba(0, 0, 0, 0.438); /* Atur box shadow ke bawah */
+  background: #000000bd;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
